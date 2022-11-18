@@ -23,8 +23,8 @@ export const SelectedJobPost = (props) => {
       
 
     e.preventDefault();
-    const name =  window.localStorage.getItem('name'); 
-    const userId =  window.localStorage.getItem('userId'); 
+    const name =  window.sessionStorage.getItem('name'); 
+    const userId =  window.sessionStorage.getItem('userId'); 
 
     const params = qs.stringify({
       username: "DuBot",

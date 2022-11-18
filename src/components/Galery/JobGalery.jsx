@@ -56,7 +56,7 @@ export const JobGalery = ({currentPagex}) => {
             <div className='PostRow'>
 
                 <Routes>
-                    <Route path="/" element={jobPosts} />
+                    <Route path="/DevelopersUnion" element={jobPosts} />
                     <Route path="/Building" element={jobPosts} />
                     <Route path="/Modeling" element={jobPosts} />
 

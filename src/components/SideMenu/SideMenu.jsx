@@ -8,7 +8,7 @@ import axios from 'axios';
 
 
 export const SideMenu = ({ setPage }) => {
-    const [currentPage, setButton] = useState("/");
+    const [currentPage, setButton] = useState("/DevelopersUnion");
     const [soundJobData, setSoundJobData] = useState()
     const [scriptJobData, setscriptJobData] = useState()
     const [modelingJobData, setmodelingJobData] = useState()
@@ -27,7 +27,7 @@ export const SideMenu = ({ setPage }) => {
            setmodelingJobData(Object.values(Data.data.Data.ModelingJobs));
            setanimationJobData(Object.values(Data.data.Data.AnimationJobs)); 
            setbuildingJobData(Object.values(Data.data.Data.BuildingJobs)); 
-           setPage(Object.values(Data.data.Data.ScriptingJobs))
+           setPageHandler(Object.values(Data.data.Data.ScriptingJobs) , "/DevelopersUnion")
 
 
         }
@@ -51,8 +51,8 @@ export const SideMenu = ({ setPage }) => {
                   
 
 
-            <Link to="/">
-                <button className={currentPage === "/" ? "Active" : "button"} id="active" onClick={() => setPageHandler(scriptJobData , "/")}>
+            <Link to="/DevelopersUnion">
+                <button className={currentPage === "/DevelopersUnion" ? "Active" : "button"} id="active" onClick={() => setPageHandler(scriptJobData , "/DevelopersUnion")}>
 
                     Scripting
                 </button>
