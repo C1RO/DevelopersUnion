@@ -43,7 +43,15 @@ export const SelectedJobPost = (props) => {
   console.log(result.data)
     })
   }else{
-    alert("You already applied to this job")
+    if (props.jobId === 0){
+      alert("Invalid job pleas choose a new job")
+
+    }else{
+      alert("You already applied to this job")
+
+    }
+
+
   }
   }
 
