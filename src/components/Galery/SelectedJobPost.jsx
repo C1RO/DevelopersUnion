@@ -32,7 +32,7 @@ export const SelectedJobPost = (props) => {
       'content-type': 'application/json'
     };
   axios.post(
-    import.meta.env.REACT_APP_DISCORDWEBHOOKURL.toString(),
+    import.meta.env.REACT_APP_DISCORDWEBHOOKURL,
       params,
       headers2
     ).then(result => {

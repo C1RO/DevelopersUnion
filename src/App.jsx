@@ -25,7 +25,7 @@ function App() {
 
     }
 
-    window.location.href = import.meta.env.REACT_APP_REDIRECTDISCORDURL.toString()
+    window.location.href = import.meta.env.REACT_APP_REDIRECTDISCORDURL
   } 
   
 
