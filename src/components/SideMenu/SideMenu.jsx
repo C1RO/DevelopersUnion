@@ -5,7 +5,7 @@ import Loading from '../../Data/Loading';
 import axios from 'axios';
 
 
-
+require('dotenv').config()
 
 export const SideMenu = ({ setPage }) => {
     const [currentPage, setButton] = useState("/DevelopersUnion");

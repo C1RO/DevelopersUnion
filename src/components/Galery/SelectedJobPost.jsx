@@ -3,7 +3,7 @@ import Styles from './Selected.css'
 import axios from 'axios';
 import qs from 'qs'
 
-
+require('dotenv').config()
 export const SelectedJobPost = (props) => {
   
   function SaveDataToLocalStorage(data)
