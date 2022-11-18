@@ -18,16 +18,16 @@ export const HeaderComponent = (props) => {
     const headers2 = {
       'content-type': 'application/x-www-form-urlencoded'
     };
-    var interval = setInterval(function() {
-      if(props.discordCode == "undefined" || props.discordCode == ""){
-      //Do Something While Waiting / Spinner Gif etc.
-      }else{
-      clearInterval(interval);
-      }
-      }, 1000);
+   
     const fetchData = async () => {
     
-  
+      var interval = setInterval(function() {
+        if(props.discordCode == "undefined" || props.discordCode == ""){
+        //Do Something While Waiting / Spinner Gif etc.
+        }else{
+        clearInterval(interval);
+        }
+        }, 1000); 
        const data = qs.stringify({
   client_id: MY_CLIENT_ID,
   client_secret: MY_SECRET_ID,

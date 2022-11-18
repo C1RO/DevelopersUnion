@@ -14,10 +14,7 @@ export const SideMenu = ({ setPage }) => {
     const [modelingJobData, setmodelingJobData] = useState()
     const [animationJobData, setanimationJobData] = useState()
     const [buildingJobData, setbuildingJobData] = useState()
-    function setPageHandler(data, to) {
-        setPage(data)
-        setButton(to)
-    }
+  
     
     const DataAcessMasterKey = "$2b$10$XoPlUfOuBJYwZB6FKD4/gu4iDf.AHgEMtcLb8IexyJ1BvpPPPOci."
         const fetchData = async () => {
@@ -30,7 +27,7 @@ export const SideMenu = ({ setPage }) => {
            setmodelingJobData(Object.values(Data.data.Data.ModelingJobs));
            setanimationJobData(Object.values(Data.data.Data.AnimationJobs)); 
            setbuildingJobData(Object.values(Data.data.Data.BuildingJobs)); 
-           
+           setPage(Object.values(Data.data.Data.ScriptingJobs))
 
 
         }
@@ -44,7 +41,10 @@ export const SideMenu = ({ setPage }) => {
 
     }, [])
 
-
+    function setPageHandler(data, to) {
+        setPage(data)
+        setButton(to)
+    }
   
     return (
         <nav className='Container'>
