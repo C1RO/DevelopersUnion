@@ -16,9 +16,8 @@ export const SideMenu = ({ setPage }) => {
     const [buildingJobData, setbuildingJobData] = useState()
   
     
-    const DataAcessMasterKey = "$2b$10$XoPlUfOuBJYwZB6FKD4/gu4iDf.AHgEMtcLb8IexyJ1BvpPPPOci."
         const fetchData = async () => {
-        const Data = await axios.get("https://dudatabase-5285e-default-rtdb.firebaseio.com/JobsData.json?auth=VC1KL0hRZOLdQYoGpiu7pfJO3IRA4EkMBroRRoXW")
+        const Data = await axios.get(process.env.dudatabaseUrl.toString())
            console.log(Data)
         if (Data.status === 200) {
 
@@ -31,7 +30,6 @@ export const SideMenu = ({ setPage }) => {
 
 
         }
-
 
 
     }

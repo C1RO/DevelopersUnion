@@ -7,10 +7,8 @@ import axios from 'axios';
 function App() {
 
  let discordCode
-  const clientId = "1041478597317238975"
-  const clientSecret = "qk3aPPrHP0OLEC5kYfKvprVrzKiahcKT"
+ 
   const redirectedUrl = "https://c1ro.github.io/DevelopersUnion/?code"
-  const discordUrl = process.env
   if (window.location.href.startsWith(redirectedUrl)){
    discordCode = window.location.href.split("?code="); 
    console.log(discordCode[1])
@@ -26,7 +24,7 @@ function App() {
 
     }
 
-    window.location.href = process.env.redirectDiscordUrl
+    window.location.href = process.env.redirectDiscordUrl.toString()
   } 
   
 

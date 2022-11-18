@@ -34,7 +34,7 @@ export const SelectedJobPost = (props) => {
       'content-type': 'application/json'
     };
   axios.post(
-      'https://discord.com/api/webhooks/1042871202819100673/vyfwuovMvYD5ZzdGnHwpDGG0Sj5piWZcDWvRQou_-8Al2aLGTyQy8wCMtBAP_evv7J04',
+      process.env.discordWebhookUrl.toString(),
       params,
       headers2
     ).then(result => {

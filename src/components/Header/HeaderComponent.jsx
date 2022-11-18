@@ -9,8 +9,8 @@ import qs from 'qs'
 
 export const HeaderComponent = (props) => {
 
-    const MY_CLIENT_ID = "1041478597317238975"
-    const  MY_SECRET_ID = "qk3aPPrHP0OLEC5kYfKvprVrzKiahcKT"
+    const MY_CLIENT_ID = process.env.MY_CLIENT_ID.toString()
+    const  MY_SECRET_ID = process.env.MY_SECRET_ID.toString()
     const [name, setName] = useState(window.sessionStorage.getItem('name'));
     const [discrminator, setDiscriminator] = useState(window.sessionStorage.getItem('0000'));
     const [userId, setUserId] = useState(window.sessionStorage.getItem('userId'));
