@@ -19,11 +19,9 @@ export const HeaderComponent = (props) => {
       'content-type': 'application/x-www-form-urlencoded'
     };
     var interval = setInterval(function() {
-      console.log('Interval Running');
       if(props.discordCode == "undefined" || props.discordCode == ""){
       //Do Something While Waiting / Spinner Gif etc.
       }else{
-      console.log('Interval Stopped');
       clearInterval(interval);
       }
       }, 1000);

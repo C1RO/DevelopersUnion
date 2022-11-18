@@ -13,6 +13,7 @@ function App() {
   if (window.location.href.startsWith(redirectedUrl)){
    discordCode = window.location.href.split("?code="); 
    console.log(discordCode[1])
+   
 
    
   }

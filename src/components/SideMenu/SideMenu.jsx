@@ -14,7 +14,11 @@ export const SideMenu = ({ setPage }) => {
     const [modelingJobData, setmodelingJobData] = useState()
     const [animationJobData, setanimationJobData] = useState()
     const [buildingJobData, setbuildingJobData] = useState()
-
+    function setPageHandler(data, to) {
+        setPage(data)
+        setButton(to)
+    }
+    
     const DataAcessMasterKey = "$2b$10$XoPlUfOuBJYwZB6FKD4/gu4iDf.AHgEMtcLb8IexyJ1BvpPPPOci."
         const fetchData = async () => {
         const Data = await axios.get("https://dudatabase-5285e-default-rtdb.firebaseio.com/JobsData.json?auth=VC1KL0hRZOLdQYoGpiu7pfJO3IRA4EkMBroRRoXW")
@@ -26,8 +30,8 @@ export const SideMenu = ({ setPage }) => {
            setmodelingJobData(Object.values(Data.data.Data.ModelingJobs));
            setanimationJobData(Object.values(Data.data.Data.AnimationJobs)); 
            setbuildingJobData(Object.values(Data.data.Data.BuildingJobs)); 
-           setPage(Object.values(Data.data.Data.ScriptingJobs))
-          
+           
+
 
         }
 
@@ -37,13 +41,11 @@ export const SideMenu = ({ setPage }) => {
     useEffect(() => {
 
         fetchData()
+
     }, [])
 
 
-    function setPageHandler(data, to) {
-        setPage(data)
-        setButton(to)
-    }
+  
     return (
         <nav className='Container'>
                   
