@@ -43,7 +43,7 @@ export const SelectedJobPost = (props) => {
   console.log(result.data)
     })
   }else{
-    if (props.jobId === 0){
+    if (props.jobId == 0){
       alert("Invalid job pleas choose a new job")
 
     }else{
