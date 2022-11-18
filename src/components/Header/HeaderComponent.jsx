@@ -22,7 +22,7 @@ export const HeaderComponent = (props) => {
             client_secret: MY_SECRET_ID,
             grant_type: 'authorization_code',
             code: props.discordCode[1],
-            redirect_uri: 'http://127.0.0.1:5173/'
+            redirect_uri: 'https://c1ro.github.io/DevelopersUnion/'
           })
         axios.post(
             'https://discord.com/api/v10/oauth2/token',
