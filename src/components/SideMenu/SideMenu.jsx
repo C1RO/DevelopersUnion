@@ -16,7 +16,7 @@ export const SideMenu = ({ setPage }) => {
   
     
         const fetchData = async () => {
-        const Data = await axios.get(process.env.REACT_APP_dudatabaseUrl.toString())
+        const Data = await axios.get(process.env.REACT_APP_DUDATABASEURL.toString())
            console.log(Data)
         if (Data.status === 200) {
 

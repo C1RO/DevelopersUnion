@@ -5,7 +5,7 @@ import { Link, Route, Routes, useMatch, useResolvedPath } from "react-router-dom
 import axios from 'axios';
 import qs from 'qs'
 
-
+const NODE_ENV = process.env.NODE_ENV.reac;
 
 export const HeaderComponent = (props) => {
 
