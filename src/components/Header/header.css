@@ -1,0 +1,25 @@
+nav{
+    display: flex;;
+    background-color: #242424;
+    flex-direction: row;
+    align-items: center;
+
+}
+img{
+    margin-left: 3.3%;
+    margin-right: 2%;
+
+    max-width: 6%;
+}
+h1{
+    font-weight: 600;
+    font-style:normal;
+    font-size: 1.5vw;
+   width: 100%;
+   color: #FBDC6A;
+
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#userName{
+    width: 15%;
+}

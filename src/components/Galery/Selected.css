@@ -1,0 +1,72 @@
+.SelectedContainer{
+
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 35vw;
+    justify-content: sp;
+    border-width: 1px;
+    border-color: #FBDC6A;
+
+    border-style: solid;
+    color: white;
+    background-color: rgb(19, 19, 19);
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    font-size: 1vw;
+}
+
+.title{
+    margin-left: 5%;
+}
+
+
+
+.ApplyButton{
+    margin-top: 5%;
+    align-self: center;;
+    width: 70%;
+    height: 100%;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #FBDC6A;
+    background-color: transparent;
+    border-width: 2px;
+
+    border-color: #FBDC6A;
+    margin-bottom: 8%;
+    border-radius: 40px;
+    
+
+}
+.Applied{
+    margin-top: 5%;
+    align-self: center;;
+    width: 70%;
+    height: 100%;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #FBDC6A;
+    background-color: transparent;
+    border-width: 2px;
+
+    border-color: #FBDC6A;
+    margin-bottom: 8%;
+    border-radius: 40px;
+     
+}
+.DescriptionSelected{
+    align-self: center;
+    margin: 4%;
+    margin-top: 0.5%;
+    font-size: 1vw;
+    overflow: auto;
+    height:30vh;
+}
+button:hover{
+    background-color: #908e8e13;
+    color: #FBDC6A;
+
+}

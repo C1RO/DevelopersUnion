@@ -1,0 +1,120 @@
+    
+.GaleryContainer{
+    margin-top: 2%;
+    display: flex;;
+    width: 100VW;
+    height: 100VH;
+    justify-content:space-evenly;
+}
+
+.SelectedPost{
+    display: flex;
+    width: 35vw;
+    height: fit-content;
+    margin: 1%;
+}
+.PostRow{
+    display: flex;
+    flex-direction: column;
+}
+.PostContainer{
+    margin: 3%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 28vw;
+    height: fit-content;
+    border-radius: 40PX;
+    border-width: 8px;
+    border-color: rgb(79, 79, 79);
+    border-style: solid;
+    color: white;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+.Active2{
+    margin: 3%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 28vw;
+    height: fit-content;
+    border-radius: 40PX;
+    border-width: 8px;
+    border-color: gray;
+    border-style: solid;
+    color: white;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+
+}
+.Active2 .PostTitle{
+    background-color: gray;
+    cursor: pointer;
+
+}
+
+.PostContainer:hover{
+    cursor: pointer;
+
+
+}
+
+
+#PaymentType{
+    font-size: 1.1vw;
+}
+#DescriptionTitle{
+    font-size: 1.2vw;
+}
+#readMore{
+    font-size: 1vw;
+    color: #FBDC6A;
+
+}
+.JobPostContainer{
+    display: flex;
+}
+.Description{
+  display: flex;
+  width: fit-content;
+  font-size: 1vw;
+  align-self: center;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.PostTitle{
+    background-color: rgb(79, 79, 79);
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    font-size: 0.8vw;
+    color: #FBDC6A;
+    font-weight: 600;
+padding-bottom: 0;
+}
+.PostTitle h2{
+    font-weight: 600;
+    color: #FBDC6A;
+
+}
+#PayAmount{
+    font-size: 1.5vw;
+    color: #FBDC6A;
+    margin-bottom: 3%;
+    margin-top: 0;
+    border-width: 8px;
+    font-family: monospace;;
+    width: 100%;
+
+}
+#Pay{
+    font-size: 1.4vw;
+
+}
