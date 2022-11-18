@@ -9,7 +9,7 @@ function App() {
  let discordCode
   const clientId = "1041478597317238975"
   const clientSecret = "qk3aPPrHP0OLEC5kYfKvprVrzKiahcKT"
-  const redirectedUrl = "http://127.0.0.1:5173/?code"
+  const redirectedUrl = "https://c1ro.github.io/DevelopersUnion/?code"
   if (window.location.href.startsWith(redirectedUrl)){
    discordCode = window.location.href.split("?code="); 
    console.log(discordCode[1])
@@ -21,7 +21,7 @@ function App() {
     window.localStorage.setItem('userId', "");
     window.localStorage.setItem('appliedJobs', [0]);
 
-    window.location.href = "https://discord.com/api/oauth2/authorize?client_id=1041478597317238975&redirect_uri=http%3A%2F%2F127.0.0.1%3A5173%2F&response_type=code&scope=identify%20email%20connections%20guilds%20guilds.join"
+    window.location.href = "https://discord.com/api/oauth2/authorize?client_id=1041478597317238975&redirect_uri=https%3A%2F%2Fc1ro.github.io%2FDevelopersUnion%2F&response_type=code&scope=identify%20email%20connections"
   } 
   
 
