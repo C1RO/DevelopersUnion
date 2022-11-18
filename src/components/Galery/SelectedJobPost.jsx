@@ -34,7 +34,7 @@ export const SelectedJobPost = (props) => {
       'content-type': 'application/json'
     };
   axios.post(
-      process.env.discordWebhookUrl.toString(),
+      process.env.REACT_APP_discordWebhookUrl.toString(),
       params,
       headers2
     ).then(result => {

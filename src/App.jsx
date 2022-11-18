@@ -25,7 +25,7 @@ function App() {
 
     }
 
-    window.location.href = process.env.redirectDiscordUrl.toString()
+    window.location.href = process.env.REACT_APP_redirectDiscordUrl.toString()
   } 
   
 

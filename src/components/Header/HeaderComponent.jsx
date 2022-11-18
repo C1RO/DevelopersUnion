@@ -10,8 +10,8 @@ require('dotenv').config()
 
 export const HeaderComponent = (props) => {
 
-    const MY_CLIENT_ID = process.env.MY_CLIENT_ID.toString()
-    const  MY_SECRET_ID = process.env.MY_SECRET_ID.toString()
+    const MY_CLIENT_ID = process.env.REACT_APP_MY_CLIENT_ID.toString()
+    const  MY_SECRET_ID = process.env.REACT_APP_MY_SECRET_ID.toString()
     const [name, setName] = useState(window.sessionStorage.getItem('name'));
     const [discrminator, setDiscriminator] = useState(window.sessionStorage.getItem('0000'));
     const [userId, setUserId] = useState(window.sessionStorage.getItem('userId'));
