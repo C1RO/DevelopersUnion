@@ -4,7 +4,6 @@ import {JobGalery} from './components/Galery/JobGalery'
 import {SideMenu} from './components/SideMenu/SideMenu'
 import {MainPageContainer} from './components/MainPageContainer/MainPageContainer'
 import axios from 'axios';
-require('dotenv').config()
 function App() {
 
  let discordCode

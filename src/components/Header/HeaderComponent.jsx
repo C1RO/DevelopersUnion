@@ -5,7 +5,6 @@ import { Link, Route, Routes, useMatch, useResolvedPath } from "react-router-dom
 import axios from 'axios';
 import qs from 'qs'
 
-require('dotenv').config()
 
 
 export const HeaderComponent = (props) => {
