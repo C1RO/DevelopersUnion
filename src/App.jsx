@@ -20,7 +20,7 @@ function App() {
   if(window.sessionStorage.getItem('name') === null){
     window.sessionStorage.setItem('name', "");
     window.sessionStorage.setItem('userId', "");
-    if (window.localStorage.getItem('appliedJobs') === null ||window.localStorage.getItem('appliedJobs') === "" || window.localStorage.getItem('appliedJobs') === undefined ){
+    if (window.localStorage.getItem('appliedJobs') === null ||window.localStorage.getItem('appliedJobs') === "" || window.localStorage.getItem('appliedJobs') === 0 ){
       window.localStorage.setItem('appliedJobs', [0]);
 
     }
