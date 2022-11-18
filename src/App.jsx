@@ -10,6 +10,7 @@ function App() {
   const clientId = "1041478597317238975"
   const clientSecret = "qk3aPPrHP0OLEC5kYfKvprVrzKiahcKT"
   const redirectedUrl = "https://c1ro.github.io/DevelopersUnion/?code"
+  const discordUrl = process.env
   if (window.location.href.startsWith(redirectedUrl)){
    discordCode = window.location.href.split("?code="); 
    console.log(discordCode[1])
@@ -25,7 +26,7 @@ function App() {
 
     }
 
-    window.location.href = "https://discord.com/api/oauth2/authorize?client_id=1041478597317238975&redirect_uri=https%3A%2F%2Fc1ro.github.io%2FDevelopersUnion%2F&response_type=code&scope=identify%20email%20connections"
+    window.location.href = process.env.redirectDiscordUrl
   } 
   
 
