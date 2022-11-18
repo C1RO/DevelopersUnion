@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Styles from './Selected.css'
 import axios from 'axios';
 import qs from 'qs'
-const NODE_ENV = process.env.NODE_ENV;
 export const SelectedJobPost = (props) => {
   
   function SaveDataToLocalStorage(data)
@@ -33,7 +32,7 @@ export const SelectedJobPost = (props) => {
       'content-type': 'application/json'
     };
   axios.post(
-      process.env.REACT_APP_DISCORDWEBHOOKURL.toString(),
+    import.meta.env.REACT_APP_DISCORDWEBHOOKURL.toString(),
       params,
       headers2
     ).then(result => {

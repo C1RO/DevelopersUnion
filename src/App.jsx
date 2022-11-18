@@ -4,10 +4,8 @@ import {JobGalery} from './components/Galery/JobGalery'
 import {SideMenu} from './components/SideMenu/SideMenu'
 import {MainPageContainer} from './components/MainPageContainer/MainPageContainer'
 import axios from 'axios';
-const NODE_ENV = process.env.NODE_ENV;
 
 function App() {
-  console.log(NODE_ENV)
 
  let discordCode
  
@@ -27,7 +25,7 @@ function App() {
 
     }
 
-    window.location.href = process.env.REACT_APP_REDIRECTDISCORDURL.toString()
+    window.location.href = import.meta.env.REACT_APP_REDIRECTDISCORDURL.toString()
   } 
   
 
