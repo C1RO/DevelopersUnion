@@ -29,10 +29,6 @@ function App() {
 
     
     <div className="App" >
-     
-
-      
-    
 
     <HeaderComponent discordCode={discordCode}/>
     <MainPageContainer />

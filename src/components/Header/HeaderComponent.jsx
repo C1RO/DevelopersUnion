@@ -18,12 +18,17 @@ export const HeaderComponent = (props) => {
     const headers2 = {
       'content-type': 'application/x-www-form-urlencoded'
     };
+    var interval = setInterval(function() {
+      console.log('Interval Running');
+      if(props.discordCode == "undefined" || props.discordCode == ""){
+      //Do Something While Waiting / Spinner Gif etc.
+      }else{
+      console.log('Interval Stopped');
+      clearInterval(interval);
+      }
+      }, 1000);
     const fetchData = async () => {
     
-       
-      console.log(Data)
-   if (Data.status === 200) {
-
   
        const data = qs.stringify({
   client_id: MY_CLIENT_ID,
@@ -66,7 +71,7 @@ setUserId(result2.data.id)
 });            
 });
 
-   }
+   
 
 
 
