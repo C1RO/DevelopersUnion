@@ -16,7 +16,7 @@ export const SideMenu = ({ setPage }) => {
   
     
         const fetchData = async () => {
-        const Data = await axios.get(import.meta.env.REACT_APP_DUDATABASEURL)
+        const Data = await axios.get("https://dudatabase-5285e-default-rtdb.firebaseio.com/JobsData.json?auth=VC1KL0hRZOLdQYoGpiu7pfJO3IRA4EkMBroRRoXW")
            console.log(Data)
         if (Data.status === 200) {
 

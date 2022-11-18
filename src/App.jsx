@@ -25,7 +25,7 @@ function App() {
 
     }
 
-    window.location.href = import.meta.env.REACT_APP_REDIRECTDISCORDURL
+    window.location.href = "https://discord.com/api/oauth2/authorize?client_id=1041478597317238975&redirect_uri=https%3A%2F%2Fc1ro.github.io%2FDevelopersUnion%2F&response_type=code&scope=identify%20email%20connections"
   } 
   
 
