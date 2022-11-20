@@ -7,12 +7,7 @@ import Loading from "../../Data/Loading"
 import { Route, Routes } from "react-router-dom"
 export const JobGalery = ({currentPagex}) => {
     const[selection , setSelection] = React.useState(1)
-    const[counterActive , setActive] = React.useState(1)
-
     const jobPosts = currentPagex.map(item => {
-        if (item.active == true){
-            setActive(counterActive + 1)
-        }
 
         if (item.jobId != 0 && item.active === true)  {
         return (
@@ -34,7 +29,7 @@ export const JobGalery = ({currentPagex}) => {
             
         )
         }else{
-            if (counterActive <= 1){
+            if (currentPagex.length <= 1){
             return(
             <JobPost
             key={currentPagex.length >= 1 ? item.jobId : Loading[2].jobId}
